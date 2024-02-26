@@ -1,0 +1,46 @@
+@theme "/home/inigoalda/.config/rofi/themes/rounded-purple-dark.rasi"
+
+* {
+    bg4: #282a36;
+    bg5: #bd93f9;
+    bg6: #282a36;
+    bg7: #A3B2BD23;
+    fg4: #44475a;
+}
+
+window {
+location: center;
+    anchor:   center;
+    transparency: "screenshot";
+    padding: 10px;
+    border:  0px;
+    border-radius: 10px;
+    spacing: 0;
+    children:  [mainbox];
+    orientation: horizontal;
+}
+
+inputbar {
+    background-color: @bg7;
+    border-color: @bg5;
+}
+
+entry {
+    placeholder-color: @fg4;
+}
+
+listview {
+    fixed-height: true;
+}
+
+element normal active {
+    text-color: @bg5;
+}
+
+element selected normal, element selected active {
+    background-color:   @bg5;
+}
+
+prompt {
+    enabled: false;
+}
